@@ -4,6 +4,10 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\RegistroController;
+use App\Http\Controllers\AuthController;
+
+Route::post('/login', [AuthController::class, 'login'])->name('login');
+
 
 Route::post('/registrar', [RegistroController::class, 'store']);
 Route::get('/', function () {
@@ -25,3 +29,6 @@ Route::middleware([
     })->name('dashboard');
 });
 Route::post('/registrar', [RegistroController::class, 'store']);
+Route::get('/login', function () {
+    return Inertia::render('Login');
+});
