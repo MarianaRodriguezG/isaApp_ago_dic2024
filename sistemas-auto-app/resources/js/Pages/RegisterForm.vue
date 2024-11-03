@@ -54,6 +54,7 @@
             <label for="carrera">Carrera</label>
             <select id="carrera" v-model="carrera">
               <option>Sistemas Aut.</option>
+              <option>Sistemas Comp.</option>
             </select>
           </div>
           <div>
