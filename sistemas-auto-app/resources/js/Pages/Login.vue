@@ -9,7 +9,7 @@
             id="nroControl"
             v-model="nroControl"
             @blur="validateNroControl"
-            placeholder="TXX120XXX"
+            placeholder="Nro. Control"
           />
           <span v-if="errors.nroControl">{{ errors.nroControl }}</span>
         </div>
