@@ -1,0 +1,10 @@
+{
+    "require": {
+        "inertiajs/inertia-laravel": "^0.4.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
+}

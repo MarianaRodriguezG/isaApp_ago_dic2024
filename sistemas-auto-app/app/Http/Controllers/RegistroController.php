@@ -1,9 +1,10 @@
 <?php
+
 namespace App\Http\Controllers;
 
-use App\Models\Alumno;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
+use Illuminate\Http\Request; // Importación de la clase Request
+use App\Models\Alumno;       // Importación del modelo Alumno
+use Illuminate\Support\Facades\Hash; // Importación de la clase Hash
 
 class RegistroController extends Controller
 {
@@ -27,4 +28,3 @@ class RegistroController extends Controller
         return redirect('/login')->with('success', 'Registro exitoso.');
     }
 }
-?>
